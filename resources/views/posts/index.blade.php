@@ -13,9 +13,9 @@
     <div class="container max-w-full mx-auto pt-4" style="width:900px">
 
         <h1 class="text-3xl font-bold mb-4"> My Blog</h1>
-
+        {{ session('user_id') }}
         <a class="mb-3 shadow bg-blue-500 hover:bg-purple-400 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded"
-            href="/posts/create">
+            href="/posts/insert">
             Add Post
         </a>
         @foreach ($posts as $post)

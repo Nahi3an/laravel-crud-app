@@ -45,10 +45,10 @@ class PostController extends Controller
         return redirect('/posts');
     }
 
-    public function edit(Post $post)
+    public function edit(Post $createdPost)
     {
 
-        return view('posts.edit', ['post' => $post]);
+        return view('posts.edit', ['createdPost' => $createdPost]);
     }
 
     public function update(Post $post)
